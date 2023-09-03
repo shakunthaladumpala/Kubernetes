@@ -1,4 +1,5 @@
 Kubernetes is having 2 planes
 1.Controle plane  2. Data Plane
-Controle plane contains API Server(this is the heart of all the work done and gives instructions according to the need,according to the instructions given  y thi all other parts will work ),Scheduler(depending on the instructions given by the API server it schedules the pod creation in different nodes)
-,etcd(this is responsible for all backup and data storage in the form of key value pair)the ,Controle manager,Cloud controle manager.
+Controle plane contains API Server(this is the heart of all the work done and gives instructions according to the need,according to the instructions given  by this all other parts will work ),Scheduler(it watches for newly created Pods with no assigned node, and selects a node for them to run on depending on the instructions given by the API server it schedules
+the pod(set of running containers) creation in different nodes)
+,etcd(this is responsible for all backup and all cluster data  in the form of key value pair)the ,Controle manager,Cloud controle manager.
